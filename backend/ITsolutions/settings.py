@@ -29,14 +29,6 @@ DEBUG = True
 
 # ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ['*']
-#ALLOWED_HOSTS = [
-#    "itsolutions-backend.onrender.com",
-#    ".onrender.com",
-#]
-# CORS_ALLOWED_ORIGINS = [
-#     "http://localhost:3000",
-#     "https://itsolutions-a83q.onrender.com",
-# ]
 
 CORS_ALLOW_ALL_ORIGINS = True
 
