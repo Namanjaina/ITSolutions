@@ -14,13 +14,12 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from turtle import home
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.http import HttpResponse
 from django.urls import path, include
 from rest_framework import routers
+
 from projects.views import ProjectViewSet
 from clients.views import ClientViewSet
 from contact.views import ContactCreateView
@@ -33,7 +32,10 @@ router.register('clients', ClientViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
-    path('api/contact/', ContactCreateView.as_view()),
-    path('api/newsletter/', NewsletterCreateView.as_view()),
+    path('api/contact/', ContactCreateView.as_view(), name="contact"),
+    path('api/newsletter/', NewsletterCreateView.as_view(), name="newsletter"),
 ]
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+# For image uploads
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
