@@ -66,19 +66,19 @@ export default function Clients() {
       name: "John Doe",
       designation: "CEO, TechCorp",
       description: "Amazing service and great support throughout the project.",
-      image: "https://via.placeholder.com/150",
+      image: "https://placehold.co/150",
     },
     {
       name: "Sarah Smith",
       designation: "Founder, StartupX",
       description: "Professional team with outstanding results.",
-      image: "https://via.placeholder.com/150",
+      image: "https://placehold.co/150",
     },
     {
       name: "Michael Lee",
       designation: "Manager, BizGroup",
       description: "Highly recommended for digital solutions.",
-      image: "https://via.placeholder.com/150",
+      image: "https://placehold.co/150",
     },
   ]);
 

@@ -54,19 +54,20 @@ export default function Projects() {
       id: 1,
       name: "Business Website",
       description: "Modern responsive website for a growing business.",
-      image: "https://via.placeholder.com/600x400",
+      image: "https://placehold.co/600x400",
     },
     {
       id: 2,
       name: "E-commerce Platform",
       description: "Scalable online store with payment integration.",
-      image: "https://via.placeholder.com/600x400",
+      image: "https://placehold.co/600x400"
+,
     },
     {
       id: 3,
       name: "Marketing Dashboard",
       description: "Analytics dashboard for tracking performance.",
-      image: "https://via.placeholder.com/600x400",
+      image: "https://placehold.co/600x400",
     },
   ]);
 
