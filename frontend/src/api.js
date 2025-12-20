@@ -10,10 +10,10 @@
 // export default api;
 
 import axios from "axios";
-  
+
 const api = axios.create({
-  baseURL: "https://itsolutions-backend.onrender.com",
-  // baseURL: "http://localhost:8000/api", 
+  baseURL: "https://itsolutions-backend.onrender.com/api",
+  // baseURL: "http://localhost:8000/api",
   headers: {
     "Content-Type": "application/json",
   },
