@@ -94,10 +94,10 @@ WSGI_APPLICATION = 'ITsolutions.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'P4GxetjAfsWDCfk1',
-        'HOST': 'db.xkbxduxxdaymdeoetmfy.supabase.co',
+        'NAME': 'itsolutionsdb',
+        'USER': 'itsolutionsdb_user',
+        'PASSWORD': 'xkVO6MXipjquzQ207zqA1SKHRdRZynTK',
+        'HOST': 'dpg-d553ukeuk2gs73bmh3cg-a',
         'PORT': '5432',
     }
 }
